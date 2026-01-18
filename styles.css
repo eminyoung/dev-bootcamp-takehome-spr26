@@ -7,9 +7,12 @@
 }
 
 body {
-  margin: 0px;
   display: inline-block;
   font-family: "Montserrat", Arial, sans-serif;
+}
+
+* {
+  margin: 0px;
 }
 
 .main-display {
@@ -36,10 +39,47 @@ body {
 
 .card-container:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
   transition: 0.5s;
 }
 
-h1 {
-  margin: 0px;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3em;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+.header h1 {
   color: darkblue;
+}
+
+.header h3,
+.description h4 {
+  color: rgba(48, 143, 200, 0.8);
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.description .line {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
